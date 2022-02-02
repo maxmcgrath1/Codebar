@@ -19,8 +19,15 @@ class Instructor(Member):
     def add_skill(self, new_skill):
         self.skills += new_skill
 
-
-
-
-
-
+class Workshop:
+    def __init__(self, date, subject, intructors, students):
+        self.date = date
+        self.subject = subject
+        self.instrutors = []
+        self.students = []
+    
+    def add_participant(self, title):
+        if type (title) is Student:
+            self.students.append(title)
+        else:
+            self.instrutors.append(title)

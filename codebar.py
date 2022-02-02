@@ -16,6 +16,9 @@ class Instructor(Member):
         self.bio = bio
         self.skills = skills
 
+    def add_skill(self, new_skill):
+        self.skills += new_skill
+
 
 
 

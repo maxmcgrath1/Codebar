@@ -34,10 +34,10 @@ class Workshop:
 
     def print_details(self):
         print(f"Workshop - {self.date} - {self.subject}")
-        print("Students")
+        print("\nStudents")
         for idx, student in enumerate(self.students):
             print(f"{idx + 1}. {student.full_name} - {student.reason}")
-        print("Instructors")
+        print("\nInstructors")
         for idx, instructor in enumerate(self.instructors):
             print(f"{idx + 1}. {instructor.full_name} - {instructor.skills} \n {instructor.bio}")
             
